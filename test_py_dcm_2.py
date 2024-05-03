@@ -9,6 +9,8 @@ spacing_list = []
 error_files = []
 fileNames = os.listdir(dcm_dir)
 
+fileNames = [file for file in fileNames if file.endswith(".dcm")]
+
 z_dims = []
 
 for i in range(len(fileNames)-1):
